@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.menu {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FFF;
+  box-shadow: 0px 3px 3px;
+}
+
+.nav-menu {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #555;
+}
+
+.nav-link a:hover {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.img-banner {
+  background-image: url('../img/jane.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 50vw;
+}
+
+.container {
+  width: 100%;
+  margin: 35px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-about {
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  width: 80%;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-12 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.col-12 a:hover {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.col-12 iframe {
+  width: 640px;
+  height: 360px;
+}
+
+
+.col-6 {
+  max-width: 50%;
+  padding: 0 15px;
+}
+
+.img {
+  width: 100%;
+}
+
+.img-about {
+  width: 50%;
+}
+
+.list-music {
+  padding: 25px 40px;
+}
+
+.list-music li {
+  padding: 10px 0;
+}
+
+.list-music span {
+  color: #F9A826;
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.contact-top {
+  padding: 50px 0;
+}
+
+.form-contact input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.btn {
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn-contact {
+  background-color: #FF0000;
+  color: #FFF;
+  font-weight: bold;
+  transition: opacity 1s;
+}
+
+.btn-contact:hover {
+  opacity: 0.7;
+}
+
+.footer {
+  background-color: #F2F2F2;
+  color: #000;
+  text-align: center;
+  padding: 2px 0px;
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 765px) {
+  .row {
+    width: 80%;
+    padding-bottom: 20px;
+    display: block;
+  }
+
+  .col-6 {
+    max-width: 100%;
+    padding: 10px 0;
+  }
+  .img-banner {
+    margin-top: 20vh;
+  }
+
+  .img-about {
+    width: 100%;
+  }
+
+  .col-12 iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav-link {
+    display: inline-block;
+    padding: 5px 10px;
+  }
+
+  .contact-top {
+    padding: 0px;
+  }
+}
